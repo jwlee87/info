@@ -15,8 +15,7 @@
     			$('.js-gtco-nav-toggle').removeClass('active');
 				
 	    	}
-	    
-	    	
+            
 	    }
 		});
 
@@ -26,7 +25,7 @@
 	var offcanvasMenu = function() {
 
 		$('#page').prepend('<div id="gtco-offcanvas" />');
-		$('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle "><i></i></a>');
+		//$('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle "><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
 		$('#gtco-offcanvas').append(clone1);
 		var clone2 = $('.menu-2 > ul').clone();
@@ -344,6 +343,18 @@
 			} , { offset: '90%' } );
 		}
 	};
+    
+    var getOnGooglePlay = function() {
+        $(".get_on_android").on("click", function(){
+           location.href="https://play.google.com/store/apps/details?id=com.coinbank.worldspon";
+        });
+    }
+    
+    var preventClickEvent = function() {
+        $(document).on('click', 'a[href="#"]', function(e){
+            e.preventDefault();
+        });
+    }
 
 	
 	$(function(){
@@ -358,6 +369,8 @@
 		loaderPage();
 		counterWayPoint();
 		changeWayPoint();
+        getOnGooglePlay();
+        preventClickEvent();
 	});
 
 

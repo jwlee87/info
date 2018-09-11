@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #17B794;
+  color: #351138;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #17B794;
+  color: #351138;
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #17B794;
+  background: #351138;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #17B794;
+  background: #351138;
 }
 
 ::selection {
   color: #fff;
-  background: #17B794;
+  background: #351138;
 }
 
 .gtco-container {
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: bold;
 }
 .gtco-nav #gtco-logo em {
-  color: #17B794;
+  color: #351138;
 }
 @media screen and (max-width: 768px) {
   .gtco-nav .menu-1, .gtco-nav .menu-2 {
@@ -141,13 +141,13 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-nav ul li a {
   font-size: 16px;
   padding: 30px 10px;
-  color: #3ac1bc;
+  color: #351138;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 .gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
-  color: #33a3bd;
+  color: #351138;
 }
 .gtco-nav ul li.has-dropdown {
   position: relative;
@@ -232,10 +232,10 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000 !important;
 }
 .gtco-nav ul li.has-dropdown:hover a, .gtco-nav ul li.has-dropdown:focus a {
-  color: #33a3bd;
+  color: #351138;
 }
 .gtco-nav ul li.btn-cta a {
-  color: #17B794;
+  color: #600c80;
 }
 .gtco-nav ul li.btn-cta a span {
   background: #fff;
@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 0 !important;
 }
 .gtco-cover a {
-  color: #17B794;
+  color: #351138;
 }
 .gtco-cover a:hover {
   color: white;
@@ -438,12 +438,12 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   left: 0;
   top: -0.1em;
-  color: #17B794;
+  color: #351138;
   font-size: 22px !important;
 }
 .gtco-services .service p {
   text-align: left;
-  color: #898989;
+  color: #351138;
   font-size: 15px;
 }
 .gtco-services .service p:last-child {
@@ -471,6 +471,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-products .gtco-item {
   position: relative;
+  padding-top: 10%;
+}
+.gtco-products .gtco-item-3 {
+  padding-top: 30%;
+}
+.gtco-products .gtco-item .text-border {
+  text-shadow: 2px 0 1px #000, -2px 0 1px #000, 0 2px 1px #000, 0 -2px 1px #000, 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 2px 2px 2px #fff, -2px -2px 2px #fff, 2px -2px 2px #fff, -2px 2px 2px #fff;
+}
+.gtco-products .gtco-item .text-border > p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1em;
 }
 .gtco-products .gtco-item .overlay {
   position: absolute;
@@ -485,6 +497,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .gtco-products .gtco-item .overlay i {
   position: absolute;
   top: 10px;
@@ -529,24 +542,38 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   opacity: .8;
   background: #3dcdbc;
-  background: -moz-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #3dcdbc), color-stop(100%, #33a1bd));
-  background: -webkit-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
-  background: -o-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
-  background: -ms-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
-  background: linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dcdbc', endColorstr='#33a1bd', GradientType=1 );
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 60%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, #d6d6d6));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0)', endColorstr='rgba(255, 255, 255, 0.5)', GradientType=1 );
 }
 .gtco-products .gtco-item:hover .overlay {
   opacity: 1;
   visibility: visible;
+}
+.gtco-products .gtco-item:hover .overlay-1 {
+  background-color: #4e004e!important;
+}
+.gtco-products .gtco-item:hover .overlay-2 {
+  background-color: #0039a3!important;
+}
+.gtco-products .gtco-item:hover .overlay-3 {
+  background-color: #0a044e!important;
+}
+.gtco-products .gtco-item:hover .overlay-4 {
+  background-color: #e82946!important;
+}
+.gtco-products .gtco-item:hover .overlay-5 {
+  background-color: #19b16b!important;
 }
 .gtco-products .gtco-item:hover .overlay .copy {
   bottom: 0;
   opacity: 1;
   visibility: visible;
 }
-
 .gtco-testimonial .gtco-testimony {
   float: left;
   width: 100%;
@@ -716,7 +743,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-staff .fh5co-social li a, .gtco-item .fh5co-social li a {
   font-size: 20px;
-  color: #17b794;
+  color: #351138;
 }
 .gtco-staff .fh5co-social li a:hover, .gtco-item .fh5co-social li a:hover {
   color: #000;
@@ -740,7 +767,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #17B794;
+  color: #351138;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -813,14 +840,14 @@ form label {
 }
 
 #gtco-header {
-  background: #3dcdbc;
-  background: -moz-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+  background: #600c80;
+  background: -moz-linear-gradient(left, #600c80 0%, #351138 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #3dcdbc), color-stop(100%, #33a1bd));
-  background: -webkit-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
-  background: -o-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
-  background: -ms-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
-  background: linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dcdbc', endColorstr='#33a1bd', GradientType=1 );
+  background: -webkit-linear-gradient(left, #600c80 0%, #351138 100%);
+  background: -o-linear-gradient(left, #600c80 0%, #351138 100%);
+  background: -ms-linear-gradient(left, #600c80 0%, #351138 100%);
+  background: linear-gradient(to right, #600c80 0%, #351138 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#351138', endColorstr='#351138', GradientType=1 );
 }
 #gtco-header p {
   color: #d3f1ed;
@@ -846,7 +873,7 @@ form label {
   margin-top: 0em;
 }
 #gtco-header .btn {
-  color: #34a7bd !important;
+  color: #351138 !important;
   text-shadow: none !important;
 }
 #gtco-header .header-img {
@@ -898,7 +925,7 @@ form label {
 #gtco-counter .counter {
   font-size: 50px;
   margin-bottom: 10px;
-  color: #17B794;
+  color: #600c80;
   font-weight: 100;
   display: block;
 }
@@ -1225,9 +1252,9 @@ form label {
 }
 
 .btn-primary {
-  background: #17B794;
+  background: #600c80;
   color: #fff;
-  border: 2px solid #17B794 !important;
+  border: 2px solid #600c80 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #1acea6 !important;
@@ -1235,11 +1262,11 @@ form label {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #17B794;
-  border: 2px solid #17B794;
+  color: #600c80;
+  border: 2px solid #600c80;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #17B794;
+  background: #600c80;
   color: #fff;
 }
 
@@ -1409,7 +1436,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #17B794;
+  border-color: #600c80;
 }
 
 .row-pb-md {
@@ -1453,7 +1480,7 @@ form label {
   margin-left: 0px;
 }
 .gtco-nav .gtco-contact ul li a i {
-  color: #17B794;
+  color: #600c80;
 }
 .gtco-nav .gtco-contact ul li a:hover i {
   color: #fff;
@@ -1472,7 +1499,7 @@ form label {
   width: 33.33%;
   float: left;
   padding: 30px;
-  background: #17B794;
+  background: #600c80;
   position: relative;
   text-align: center;
 }
