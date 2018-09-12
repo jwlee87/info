@@ -47,6 +47,33 @@
 		
 	<div class="gtco-loader"></div>
 	
+	<!-- START Ranger Header -->
+	<header role="banner" id="fh5co-header">
+        <div class="container">
+		<!-- <div class="row"> -->
+		   <nav class="navbar navbar-default">
+		      <div class="navbar-header">
+		      	<!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html">Ranger<span>.</span></a> 
+		      </div>
+		      <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+		              <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+		              <li><a href="#" data-nav-section="services"><span>Services</span></a></li>
+		              <li><a href="#" data-nav-section="screenshots"><span>Screenshots</span></a></li>
+		              <li><a href="#" data-nav-section="tour"><span>Tour</span></a></li>
+		              <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
+		              <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
+		              <li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li>
+		          </ul>
+		      </div>
+            </nav>
+            <!-- </div> -->
+        </div>
+    </header>
+    <!-- END Ranger Header -->
+	
 	<div id="page">
 
 		<nav class="gtco-nav" role="navigation">
@@ -56,19 +83,23 @@
 					<div class="col-sm-2 col-xs-12">
 						<div id="gtco-logo"><a href="index.html"><img src="/info/img/top_logo.png" alt="WorldSpon"></a></div>
 					</div>
-					<!--
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
+					
+					<div id="navbar" class="col-xs-10 text-right menu-1">
+						<ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#aboutWS" data-nav-section="aboutWS"><span>About</span></a></li>
+							<li><a href="#" data-nav-section="features">Features</a></li>
+							<li><a href="#" data-nav-section="contact">Contact</a></li>
 						</ul>
 					</div>
-					-->
+					
 				</div>
 				
 			</div>
 		</nav>
+		
+		
+		
 
 		<header id="gtco-header" class="gtco-cover" role="banner" style="height: 96vh;">
 			<div class="gtco-container">
@@ -78,7 +109,7 @@
 							<div class="display-tc">
 								<div class="row">
 									<div class="col-md-5 text-center header-img animate-box">
-										<img src="/info/img/main_logo.png" alt="Free HTML5 Website Template by FreeHTML5.co">
+										<img src="/info/img/main_logo.png" alt="The World Best Reward App WorldSpon">
 									</div>
 									<div class="col-md-7 copy animate-box">
 										<h1>Make your life simpler, try this for free.</h1>
@@ -102,7 +133,7 @@
 		<!-- END #gtco-header -->
 		
 		<!-- START About WorldSpon -->
-		<div class="gtco-client gtco-backgroud-purple-1">
+		<div class="gtco-client gtco-backgroud-purple-1" data-section="aboutWS">
 			<div class="gtco-container">
 			    <div class="row">
                     <div class="col-md-12 col-md-offset-0 text-left">
@@ -210,7 +241,8 @@
 		</div>
 		<!-- END .gtco-services -->
 
-		<div class="gtco-section gtco-products">
+        <!-- START features -->
+		<div class="gtco-section gtco-products jw-background-color-1" data-section="features">
 			<div class="gtco-container">
 				<div class="row row-pb-sm">
 					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
@@ -236,7 +268,7 @@
 								<i class="ti-arrow-top-right"></i>
 								<div class="copy">
 									<h3>보안성</h3>
-									<p>월드스폰만의 차별화된 기술력로 만든 강력한 보안체계로 유저분들의 정보를지켜드립니다.</p>
+									<p>월드스폰만의 차별화된 기술력으로 만든 강력한 보안체계로 유저분들의 정보를지켜드립니다.</p>
 								</div>
 							</div>
 							<span class="text-border"><p>강력한 보안기술 적용</p></span>
@@ -271,7 +303,7 @@
 								<i class="ti-arrow-top-right"></i>
 								<div class="copy">
 									<h3>게임성</h3>
-									<p>재밌는 게임을 보상을 획득하세요!</p>
+									<p>재밌는 게임을 통해 보상을 획득하세요!</p>
 								</div>
 							</div>
 							<span class="text-border"><p>게임을 통한 보상</p></span>
@@ -280,12 +312,17 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12 text-center">
-					<p><a href="http://freehtml5.co" target="_blank" class="btn btn-special">Visit Gettemplates.co</a></p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img class="btn get_on_android" src="/info/img/google_play.png"
+                                    style="padding: 0; margin: 0; background-color: transparent;" alt="get on Android">
+                            </div>
+                        </div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- END .gtco-products -->
+		<!-- END features -->
 
 		<div class="gtco-section gtco-testimonial gtco-gray">
 			<div class="gtco-container">
@@ -339,9 +376,8 @@
 				</div>
 			</div>
 		</div>
-		
 
-		<footer id="gtco-footer" class="gtco-section" role="contentinfo">
+		<footer id="gtco-footer" class="gtco-section" role="contentinfo" data-section="contact">
 			<div class="gtco-container">
 				<div class="row row-pb-md">
 					<div class="col-md-8 col-md-offset-2 gtco-cta text-center">

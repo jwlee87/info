@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-nav ul li a {
   font-size: 16px;
-  padding: 30px 10px;
+  padding: 10px 10px;
   color: #351138;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -477,12 +477,12 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-top: 30%;
 }
 .gtco-products .gtco-item .text-border {
-  text-shadow: 2px 0 1px #000, -2px 0 1px #000, 0 2px 1px #000, 0 -2px 1px #000, 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 2px 2px 2px #fff, -2px -2px 2px #fff, 2px -2px 2px #fff, -2px 2px 2px #fff;
+  text-shadow: 3px 3px 3px #000000;
 }
 .gtco-products .gtco-item .text-border > p {
   text-align: center;
   color: #ffffff;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 .gtco-products .gtco-item .overlay {
   position: absolute;
@@ -1123,6 +1123,179 @@ form label {
   outline: none;
 }
 
+
+#fh5co-header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header {
+    margin-top: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  }
+  #fh5co-header .navbar-brand {
+    color: #4AE3B5 !important;
+  }
+  #fh5co-header #navbar li a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #fh5co-header #navbar li a:hover {
+    color: #4AE3B5 !important;
+  }
+  #fh5co-header #navbar li a span:before {
+    background: transparent !important;
+  }
+  #fh5co-header #navbar li.active a {
+    background: transparent;
+    background: none;
+    color: #4AE3B5 !important;
+  }
+  #fh5co-header #navbar li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+#fh5co-header .navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#fh5co-header #navbar li a {
+  font-family: "Work Sans", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+#fh5co-header #navbar li a span {
+  position: relative;
+  display: block;
+  padding-bottom: 2px;
+}
+#fh5co-header #navbar li a span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4AE3B5;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#fh5co-header #navbar li a:hover {
+  color: #fff;
+}
+#fh5co-header #navbar li a:hover span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#fh5co-header #navbar li.active a {
+  background: transparent;
+  background: none;
+  color: #fff;
+}
+#fh5co-header #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#fh5co-header .navbar-brand {
+  float: left;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 0;
+  color: #fff;
+}
+#fh5co-header .navbar-brand span {
+  color: #4AE3B5;
+}
+#fh5co-header.navbar-fixed-top {
+  position: fixed !important;
+  background: #fff;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  top: 0;
+}
+#fh5co-header.navbar-fixed-top .navbar-brand {
+  color: #4AE3B5;
+}
+#fh5co-header.navbar-fixed-top #navbar li a {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#fh5co-header.navbar-fixed-top #navbar li a:hover {
+  color: #4AE3B5;
+}
+#fh5co-header.navbar-fixed-top #navbar li.active a {
+  background: transparent;
+  background: none;
+  color: #4AE3B5;
+}
+#fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#fh5co-header .navbar-default {
+  border: transparent;
+  background: transparent;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header .navbar-default {
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+#fh5co-header .navbar-default .brand-slogan {
+  margin: 28px 0 0 15px;
+  float: left;
+  letter-spacing: 2px;
+  color: #adadad;
+}
+#fh5co-header .navbar-default .brand-slogan em {
+  color: #4AE3B5;
+  font-style: normal;
+}
+#fh5co-header a {
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+
 .gtco-nav-toggle {
   width: 25px;
   height: 25px;
@@ -1454,7 +1627,7 @@ form label {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: url(../img/loader.gif) center no-repeat #fff;
 }
 
 .js .animate-box {
@@ -1909,3 +2082,13 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.jw-background-color-1 {
+  background: rgb(65, 15, 58);
+  opacity: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  
+    
+}
